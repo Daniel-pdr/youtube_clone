@@ -5,7 +5,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Youtube Clone</title>
     <style> 
-        #navbar {
+
+    #navbar {
+        border: 3px solid #fff;
+        padding: 20px;
+    }
+
+    .child {
+        width:100px;
+        height: 100px;
+        float: left;
+        padding: 20px;
+        border: 2px solid red;
+    } 
+    
+    #logo {
+        position: relative;
+        height: 100px;
+        width: 100px;
+        margin-left: 4px;
+        margin-top: 4px;
+        margin-right: 4px;
+    }
+
+    #hamburger {
+        position: relative;
+        height: 100px;
+        width: 100px;
+        margin-left: 4px;
+        margin-top: 4px;
+        margin-right: 4px;
+    }
+
+    .logo_container {
+        
+        position: relative;
+        width: 100px;
+        margin-left: 4px;
+        margin-top: 4px;
+        margin-right: 0px;
+    }
+        
+        /* #navbar {
             background-color: white;
             max-height: 100px;
         }
@@ -21,28 +62,45 @@
         #logo {
             background-color: white;
             height: 100px;
-            /*object-fit: fill;*/
+            object-fit: fill;
         }
         #hamburger {
             background-color: white;
             height: 100px;
-            /*object-fit: fill;*/
+            object-fit: fill;
         }
         #searchbox {
-            background-color: white;
-            width: 35%;
-            /*object-fit: fill;*/
+            background-color: white;    
+            position: relative;
+            left: 20px;
+            top: -50px;
+            height: 20px;
+            width: 600px;
+            margin-left: 400px;
+
+            object-fit: fill;
         }
+        #search_icon {
+
+            background-color: white;
+
+        } */
     </style>
 </head>
 <body>
     <section id = "navbar">
-        <img id = "hamburger" src="/home/daniel/the_odin_project/youtube_clone/hamburger.png" alt="Hamburger">
-        <img id = "logo" src="/home/daniel/the_odin_project/youtube_clone/logo_youtube.jpg" alt="YT Logo">
-        <input id = "searchbox" type="text" placeholder="Search">
-        <h1>Youtube</h1>
+        <div class="child">
+            <img id = "hamburger" src="./hamburger.png" alt="Hamburger">
+        </div>
+        <div class="child">
+            <img id = "logo" src="./logo_youtube.jpg" alt="YT Logo">
+        </div>
+        <div class="child" style="width: 500px;">
+            <span><input style="width: 500px;align-items: center;border-top-width: 40px;" type="text" placeholder="Search"/></span>
+        </div>
+    
     </section>
-    <section id = "VideoandDescription">
+    <!-- <section id = "VideoandDescription">
         <h1>Video</h1>
     </section>
     <section id = "RelatedVideos" >
@@ -50,6 +108,6 @@
     </section>
     <section id = "Comments">
         <h1>Comments</h1>
-    </section>
+    </section> -->
 </body>
 </html>
