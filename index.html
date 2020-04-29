@@ -3,111 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">
     <title>Youtube Clone</title>
-    <style> 
-
-    #navbar {
-        border: 3px solid #fff;
-        padding: 20px;
-    }
-
-    .child {
-        width:100px;
-        height: 100px;
-        float: left;
-        padding: 20px;
-        border: 2px solid red;
-    } 
-    
-    #logo {
-        position: relative;
-        height: 100px;
-        width: 100px;
-        margin-left: 4px;
-        margin-top: 4px;
-        margin-right: 4px;
-    }
-
-    #hamburger {
-        position: relative;
-        height: 100px;
-        width: 100px;
-        margin-left: 4px;
-        margin-top: 4px;
-        margin-right: 4px;
-    }
-
-    .logo_container {
-        
-        position: relative;
-        width: 100px;
-        margin-left: 4px;
-        margin-top: 4px;
-        margin-right: 0px;
-    }
-        
-        /* #navbar {
-            background-color: white;
-            max-height: 100px;
-        }
-        #VideoandDescription {
-            background-color: grey;
-        }
-        #RelatedVideos {
-            background-color: red;
-        }
-        #Comments {
-            background-color: blue;
-        }
-        #logo {
-            background-color: white;
-            height: 100px;
-            object-fit: fill;
-        }
-        #hamburger {
-            background-color: white;
-            height: 100px;
-            object-fit: fill;
-        }
-        #searchbox {
-            background-color: white;    
-            position: relative;
-            left: 20px;
-            top: -50px;
-            height: 20px;
-            width: 600px;
-            margin-left: 400px;
-
-            object-fit: fill;
-        }
-        #search_icon {
-
-            background-color: white;
-
-        } */
-    </style>
 </head>
 <body>
     <section id = "navbar">
         <div class="child">
             <img id = "hamburger" src="./hamburger.png" alt="Hamburger">
         </div>
-        <div class="child">
-            <img id = "logo" src="./logo_youtube.jpg" alt="YT Logo">
+        <div class="child" style="width: 200px;">
+            <img id = "logo" style="width: 200px;" src="./logo_youtube.jpg" alt="YT Logo">
         </div>
-        <div class="child" style="width: 500px;">
-            <span><input style="width: 500px;align-items: center;border-top-width: 40px;" type="text" placeholder="Search"/></span>
+        <div class="child" style="width: 515px;">
+            <input style="width: 515px;align-items: center;margin-top: 45px;" type="text" placeholder="Search"/>
+        </div>
+        <div>
+            <button id="button"></button>
         </div>
     
     </section>
-    <!-- <section id = "VideoandDescription">
-        <h1>Video</h1>
+    <section id = "VideoandDescription" style="float: left;">
+        <div style="width: 560px;">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/lJIrF4YjHfQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
     </section>
-    <section id = "RelatedVideos" >
-        <h1>Related</h1>
+    <section>
+        <div  id="sidebar"  >
+            <div class="related">
+                <img id = "hamburger" src="./hamburger.png" alt="Hamburger" >
+            </div>
+            <div class="related">
+                <textarea name="Title" id="" cols="30" rows="10"></textarea>
+            </div>
+        </div>
     </section>
-    <section id = "Comments">
-        <h1>Comments</h1>
-    </section> -->
+
 </body>
 </html>
