@@ -7,35 +7,29 @@
     <title>Youtube Clone</title>
 </head>
 <body>
-    <section id = "navbar">
-        <div class="child">
-            <img id = "hamburger" src="./hamburger.png" alt="Hamburger">
-        </div>
-        <div class="child" style="width: 200px;">
-            <img id = "logo" style="width: 200px;" src="./logo_youtube.jpg" alt="YT Logo">
-        </div>
-        <div class="child" style="width: 515px;">
-            <input style="width: 515px;align-items: center;margin-top: 45px;" type="text" placeholder="Search"/>
-        </div>
-        <div>
-            <button id="button"></button>
-        </div>
+    <section id = "navbar" class="nav-container">
+
+        <img style="flex-grow:0;" id = "hamburger" src="./hamburger.png" alt="Hamburger">
+
+        <img style="flex-grow:0;" id = "logo" style="width: 200px;" src="./logo_youtube.jpg" alt="YT Logo">
+       
+        <input style="flex-grow:0;" type="text" placeholder="Search"/>
+
+        <button style="flex-grow:0;" id="button"></button>
+
+        <img style="flex-grow:0; align-self:flex-end" src="./apps.png" alt="Apps">
     
     </section>
-    <section id = "VideoandDescription" style="float: left;">
-        <div style="width: 560px;">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/lJIrF4YjHfQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
-    </section>
-    <section>
-        <div  id="sidebar"  >
+    <section id = "VideoandDescription" class="body-container">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/lJIrF4YjHfQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <aside>
             <div class="related">
                 <img id = "hamburger" src="./hamburger.png" alt="Hamburger" >
             </div>
             <div class="related">
                 <textarea name="Title" id="" cols="30" rows="10"></textarea>
             </div>
-        </div>
+        </aside>
     </section>
 
 </body>
